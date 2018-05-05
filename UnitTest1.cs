@@ -24,7 +24,7 @@ namespace Selenio.Tests.MsTest
                 GBHHome.WaitForScreen();
 
                 App.Reporter.TestStep = "Hacer mouse over para desplegar menu en la opcion 'Servicios'";
-                GBHHome.HoverOverMenuItem(GBHHome.Servicios).Servicios.Click();
+                GBHHome.HoverOverMenuItem(GBHHome.DesarrolloDeSoftware).DesarrolloDeSoftware.Click();
 
                 App.Reporter.TestStep = "Hacer click en la opcion 'Portafolio'";
                 GBHHome.Portafolio.Click();

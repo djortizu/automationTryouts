@@ -10,27 +10,31 @@ namespace Selenio.Tests.MsTest.PageObjects.GBH
 {
     public class GBHMain : PageObject
     {
-        [FindsBy(How = How.Id, Using = "")]
+        [FindsBy(How = How.XPath, Using = "//a[@title='Inicio']")]
         public IWebElement GBHLogo { get; set; }
 
         [WaitForThisElement]
-        [FindsBy(How = How.Id, Using = "")]
+        [FindsBy(How = How.XPath, Using = "menu-item-21")]
         public IWebElement Inicio { get; set; }
 
-        [FindsBy(How = How.Id, Using = "")]
+        [FindsBy(How = How.Id, Using = "menu-item-209")]
         public IWebElement Servicios { get; set; }
 
-        [FindsBy(How = How.Id, Using = "")]
+        [FindsBy(How = How.Id, Using = "menu-item-62")]
         public IWebElement Portafolio { get; set; }
 
-        [FindsBy(How = How.Id, Using = "")]
+        [FindsBy(How = How.Id, Using = "menu-item-65")]
         public IWebElement Conocenos { get; set; }
 
-        [FindsBy(How = How.Id, Using = "")]
+        [FindsBy(How = How.Id, Using = "menu-item-126")]
         public IWebElement Empleos { get; set; }
 
-        [FindsBy(How = How.Id, Using = "")]
+        [FindsBy(How = How.Id, Using = "menu-item-20")]
         public IWebElement Blog { get; set; }
+
+        [FindsBy(How = How.Id, Using = "menu-item-2976")]
+        public IWebElement DesarrolloDeSoftware { get; set; }
+
 
         public virtual GBHMain Open()
         {
